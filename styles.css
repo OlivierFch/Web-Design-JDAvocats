@@ -1,0 +1,103 @@
+html {
+    scroll-behavior: smooth;    /* Transition douce vers les différentes parties */
+}
+
+body {
+    margin: 0;  /* Aucune marges externes */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;               /* Taille de police */
+}
+
+/* -------------------------------- Barre de navigation -------------------------------- */
+
+.liste_nav_menu {
+    display: flex; /* Transformation en flexbox */
+    padding: 0; /* Suppression des marges en internes */
+    margin: 0;  /* Suppression des marges en externes */
+    height: 4vw;
+    width: auto;    /* Prend toute la largeur de l'écran */
+    background-color: #191d2b; /* Ajout de la couleur d'arrière-plan */
+    justify-content: center;     /* Alignements horizontaux des liens dans le menu */
+    align-items: center;    /* Alignements verticaux des liens dans le menu */
+    position: sticky;   /* Fixation du menu lors du scroll */
+    top: 0;
+}
+
+.liste_nav_menu li {
+    list-style-type: none; /* Suppression des puces */
+}
+
+.liste_nav_menu img {
+    position: relative;     /* Décalage de l'image à gauche */
+    right: 15vw;
+}
+
+.liste_nav_menu a {
+    display: block; /* Transformation en block */
+    min-width: 8vw;    /* Largeur minimale des liens */
+    position: relative; 
+    left: 10vw;
+
+    margin: 0.8rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: transparent;    /* Couleur d'arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    
+
+    transition: all 0.5s; /* Ajout d'un effet de transition */
+}
+
+.liste_nav_menu a:hover {
+    /* color: #FADE29; */
+    color: #EFD006;
+}
+
+/* -------------------------------- Home section -------------------------------- */
+
+#home {
+    height: 43.85vw;
+    width: auto;
+    background-color: aqua;
+}
+
+/* -------------------------------- Cabinet section -------------------------------- */
+
+#cabinet {
+    height: 48vw;
+    width: auto;
+    background-color: rebeccapurple;
+}
+
+/* -------------------------------- Expertise section -------------------------------- */
+
+#expertise {
+    height: 48vw;
+    width: auto;
+    background-color: red;
+}
+
+/* -------------------------------- Honoraire section -------------------------------- */
+
+#honoraire {
+    height: 48vw;
+    width: auto;
+    background-color: green;
+}
+
+/* -------------------------------- Avis section -------------------------------- */
+
+#avis {
+    height: 28vw;
+    width: auto;
+    background-color: brown;
+}
+
+/* -------------------------------- Contact section -------------------------------- */
+
+#contact {
+    height: 48vw;
+    width: auto;
+    background-color: orange;
+}
