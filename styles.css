@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;  /* Aucune marges externes */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1em;               /* Taille de police */
+    font-size: 1rem;               /* Taille de police */
 }
 
 /* -------------------------------- Barre de navigation -------------------------------- */
@@ -21,6 +21,8 @@ body {
     align-items: center;    /* Alignements verticaux des liens dans le menu */
     position: sticky;   /* Fixation du menu lors du scroll */
     top: 0;
+    z-index: 100;   /* Reste au dessus des autres éléments */
+
 }
 
 .liste_nav_menu li {
@@ -29,14 +31,14 @@ body {
 
 .liste_nav_menu img {
     position: relative;     /* Décalage de l'image à gauche */
-    right: 15vw;
+    right: 38vw;
 }
 
 .liste_nav_menu a {
     display: block; /* Transformation en block */
     min-width: 8vw;    /* Largeur minimale des liens */
-    position: relative; 
-    left: 10vw;
+    position: relative;     /* Décalage des éléments à droite */
+    left: 20vw;
 
     margin: 0.8rem;               /* Marges externes */
     padding: 0.4rem 0;            /* Marges internes */
@@ -50,16 +52,55 @@ body {
 }
 
 .liste_nav_menu a:hover {
-    /* color: #FADE29; */
     color: #EFD006;
 }
 
 /* -------------------------------- Home section -------------------------------- */
 
 #home {
-    height: 43.85vw;
+    height: 44vw;
     width: auto;
-    background-color: aqua;
+    background-color: #212953;
+    overflow: hidden;   /* Cacher les éléments qui dépassent */
+}
+
+.bloc_gauche {
+    width: 40vw;
+    height: 10vw;
+    /* background-color: beige; */
+    position: relative;
+    top: 10vw;
+    left: 12vw;
+}
+
+
+.bloc_gauche h1, h3 {
+    color: #fff;
+}
+
+.bloc_gauche h1 {
+    font-size: 5vw;
+}
+
+.bloc_gauche h3 {
+    font-size: 2vw;
+    position: relative;
+    bottom: 3vw;
+}
+
+.bloc_droit {
+    width: 80vw;
+    height: 80vw;
+    background-color: beige;
+    transform: rotate(-65deg);
+    position: relative;
+    bottom: 25vw;
+    left: 45vw;
+    overflow: hidden;
+}
+
+.bloc_droit img {
+    transform: rotate(65deg);
 }
 
 /* -------------------------------- Cabinet section -------------------------------- */
@@ -67,13 +108,93 @@ body {
 #cabinet {
     height: 48vw;
     width: auto;
-    background-color: rebeccapurple;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
 }
+
+.cabinet_gauche {
+    background-color: #fff;
+    height: fit-content;
+    text-align: justify;
+    margin: 2vw 4vw;
+    flex: 1 1;
+}
+
+.cabinet_gauche h1 {
+    font-size: 3vw;
+    width: 15vw;
+    height: fit-content;
+    background-color: #EFD006;
+    margin: 0vw 0vw 5vw 0vw;    /* marges externes (haut/droite/bas/gauche) */
+}
+
+.cabinet_gauche span {
+    color: #EFD006;
+    font-weight: 900;
+}
+
+.cabinet_droit {
+    flex: 1 1;
+}
+
+.cabinet_droit img {
+    height: 80%;
+    width: 80%;
+}
+
+/* -------------- Details cabinet section -------------- */
+
+#details_cabinet_container {
+    width: 100%;
+    height: 18vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3vw;
+}
+
+#left_details_cabinet {
+    float: left;
+    width: 30%;
+    height: 15vw;
+    background-color: aqua;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#center_details_cabinet {
+    float: left;
+    width: 30%;
+    height: 15vw;
+    background-color: green;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#right_details_cabinet {
+    float: left;
+    width: 30%;
+    height: 15vw;
+    background-color: #212953;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* -------------------------------- Expertise section -------------------------------- */
 
 #expertise {
-    height: 48vw;
+    height: 52vw;
     width: auto;
     background-color: red;
 }
