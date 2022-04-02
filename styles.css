@@ -22,7 +22,6 @@ body {
     position: sticky;   /* Fixation du menu lors du scroll */
     top: 0;
     z-index: 100;   /* Reste au dessus des autres éléments */
-
 }
 
 .liste_nav_menu li {
@@ -47,11 +46,14 @@ body {
     color: #fff;                  /* Couleur du texte */
     text-decoration: none;        /* Suppression du soulignement */
     
-
     transition: all 0.5s; /* Ajout d'un effet de transition */
 }
 
 .liste_nav_menu a:hover {
+    color: #EFD006;
+}
+
+.liste_nav_menu a:active {
     color: #EFD006;
 }
 
@@ -60,48 +62,99 @@ body {
 #home {
     height: 44vw;
     width: auto;
-    background-color: #212953;
-    overflow: hidden;   /* Cacher les éléments qui dépassent */
+
+    background-image: url("images/presentation_bayonne.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bloc_gauche {
-    width: 40vw;
-    height: 10vw;
-    /* background-color: beige; */
-    position: relative;
-    top: 10vw;
-    left: 12vw;
+    width: 60%;
+    height: 44vw;
+    float: left;
+
+    background-color: rgba(33, 41, 83, 0.8);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
+.bloc_droit {
+    width: 40%;
+    height: 44vw;
+    float: right;
+}
 
-.bloc_gauche h1, h3 {
+#titre_avocat {
+    width: 70%;
+    height: fit-content;
+}
+
+#titre_avocat h1, h3 {
     color: #fff;
 }
 
-.bloc_gauche h1 {
+#titre_avocat h1 {
     font-size: 5vw;
 }
 
-.bloc_gauche h3 {
-    font-size: 2vw;
+#titre_avocat h3 {
+    font-size: 3vw;
     position: relative;
     bottom: 3vw;
 }
 
-.bloc_droit {
-    width: 80vw;
-    height: 80vw;
-    background-color: beige;
-    transform: rotate(-65deg);
+#first_lign {
+    width: 70%;
+    height: fit-content;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
     position: relative;
-    bottom: 25vw;
-    left: 45vw;
-    overflow: hidden;
+    bottom: 3.5vw;
 }
 
-.bloc_droit img {
-    transform: rotate(65deg);
+#second_lign {
+    width: 70%;
+    height: fit-content;
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+
+    position: relative;
+    bottom: 6.5vw;
 }
+
+.bloc_gauche h6 {
+    width: fit-content;
+    font-size: 1.1vw;
+    padding: 0.7vw;
+    border: 0.2vw solid #fff;
+    border-radius: 1vw;
+    color: #fff;
+    background-color: transparent;
+
+    margin-right: 2vw;
+
+}
+
+
+.bloc_gauche h6:hover {
+    color: #212953;
+    border: 0.2vw solid #EFD006;
+    background-color:#EFD006;
+
+    transition: all 0.5s;
+} 
+
 
 /* -------------------------------- Cabinet section -------------------------------- */
 
@@ -125,7 +178,6 @@ body {
     font-size: 3vw;
     width: 15vw;
     height: fit-content;
-    background-color: #EFD006;
     margin: 0vw 0vw 5vw 0vw;    /* marges externes (haut/droite/bas/gauche) */
 }
 
