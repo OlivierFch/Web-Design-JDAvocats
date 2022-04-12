@@ -6,26 +6,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9315477340.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    <title>John Doe Avocate</title>
+    <title>AF Cabinet</title>
 </head>
 
 <body>
 
-    <ul class="liste_nav_menu">
+    <!-- <ul class="liste_nav_menu">
         <li><a href="#home"><img src="images/gps_fixed_white_24dp.svg" alt="logo"></a></li>
         <li><a href="#home">Accueil</a></li>
         <li><a href="#cabinet">Le cabinet</a></li>
         <li><a href="#expertise">Expertises</a></li>
         <li><a href="#honoraire">Honoraires</a></li>
         <li><a href="#contact">Contact</a></li>
-    </ul>
+    </ul> -->
+
+    <nav class="navbar">
+        <a href="#home" class="logo">LOGO</a>
+        <input type="checkbox" id="toggler">
+        <label for="toggler"><i class="fa-solid fa-bars"></i></label>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cabinet">Cabinet</a></li>
+                <li><a href="#expertise">Expertises</a></li>
+                <li><a href="#honoraire">Honoraires</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     
     <section id="home">
         <div class="bloc_gauche">
             <div id="titre_avocat">
                 <h1><span style="color: #EFD006;">Arnaud Foucher</span></h1>
-                <h3>Avocat fiscaliste <br> sur Bayonne</h3>
+                <h3>Avocat fiscaliste <br> à Bayonne</h3>
             </div>
             <div id="first_lign">
                 <h6>Droit des sociétés</h6>
@@ -42,8 +59,8 @@
 
     <section id="cabinet">
         <div class="cabinet_gauche">
-            <h1>Le cabinet</h1>
-            <p>
+            <h1 data-aos="fade-right">Le cabinet</h1>
+            <p data-aos="fade-right">
                 Le cabinet de droit fiscal <span>John Doe</span> est un cabinet indépendant créé en 2022 par Me John Doe, avocat au Barreau de Bayonne. 
                 <br>
                 <br>
@@ -92,5 +109,7 @@
     <footer>
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>

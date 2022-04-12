@@ -10,51 +10,69 @@ body {
 
 /* -------------------------------- Barre de navigation -------------------------------- */
 
-.liste_nav_menu {
-    display: flex; /* Transformation en flexbox */
-    padding: 0; /* Suppression des marges en internes */
-    margin: 0;  /* Suppression des marges en externes */
-    height: 4vw;
-    width: auto;    /* Prend toute la largeur de l'écran */
-    background-color: #191d2b; /* Ajout de la couleur d'arrière-plan */
-    justify-content: center;     /* Alignements horizontaux des liens dans le menu */
-    align-items: center;    /* Alignements verticaux des liens dans le menu */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #191d2b;
+    padding: 15px;
+
     position: sticky;   /* Fixation du menu lors du scroll */
     top: 0;
     z-index: 100;   /* Reste au dessus des autres éléments */
 }
 
-.liste_nav_menu li {
-    list-style-type: none; /* Suppression des puces */
-}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
 
-.liste_nav_menu img {
-    position: relative;     /* Décalage de l'image à gauche */
-    right: 38vw;
-}
-
-.liste_nav_menu a {
-    display: block; /* Transformation en block */
-    min-width: 8vw;    /* Largeur minimale des liens */
-    position: relative;     /* Décalage des éléments à droite */
-    left: 20vw;
-
-    margin: 0.8rem;               /* Marges externes */
-    padding: 0.4rem 0;            /* Marges internes */
-    text-align: center;           /* Centrage du texte */   
-    background-color: transparent;    /* Couleur d'arrière-plan */
-    color: #fff;                  /* Couleur du texte */
-    text-decoration: none;        /* Suppression du soulignement */
-    
     transition: all 0.5s; /* Ajout d'un effet de transition */
 }
 
-.liste_nav_menu a:hover {
+.navbar a:hover {
     color: #EFD006;
 }
 
-.liste_nav_menu a:active {
-    color: #EFD006;
+.logo {
+    margin-left: 25px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 5vw;
+    margin-right: 3vw;
+}
+
+#toggler, .navbar label {
+    display: none;  /* Cacher l'élément */
+    color: #fff;
+}
+
+
+@media screen and (max-width: 600px) {
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked ~ .menu {
+        max-height: 100%;
+    }
 }
 
 /* -------------------------------- Home section -------------------------------- */
@@ -146,7 +164,6 @@ body {
 
 }
 
-
 .bloc_gauche h6:hover {
     color: #212953;
     border: 0.2vw solid #EFD006;
@@ -162,6 +179,7 @@ body {
     height: 48vw;
     width: auto;
     background-color: #fff;
+    
     display: flex;
     align-items: center;
 }
@@ -171,7 +189,8 @@ body {
     height: fit-content;
     text-align: justify;
     margin: 2vw 4vw;
-    flex: 1 1;
+    
+    float: left;
 }
 
 .cabinet_gauche h1 {
@@ -187,7 +206,7 @@ body {
 }
 
 .cabinet_droit {
-    flex: 1 1;
+    float: right;
 }
 
 .cabinet_droit img {
