@@ -2,13 +2,23 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9315477340.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+
     <title>AF Cabinet</title>
 </head>
 
@@ -27,48 +37,52 @@
             </ul>
         </div>
     </nav>
-    
-    <section id="home">
 
-        <video id="bgVideo" height="1080" width="1920" autoplay loop muted>
+    <div id="home" style="height: 90vh; position: relative;">
+
+        <video id="bgVideo" height="1080" width="1920" autoplay loop muted
+            style="width: 100%; height:100%; object-fit: cover;">
             <source src="/images/Pexels Videos 2625.mp4" type="video/mp4">
         </video>
 
         <div class="home_section" data-aos="fade-up" data-aos-duration="1500">
-            <h1 class="title_home_section" data-aos="fade-up" data-aos-duration="1100">Avocats fiscalistes <br> à Bayonne</h1>
-            <p class="description_home_section" data-aos="fade-up" data-aos-duration="1100">Le cabinet AF AVOCATS est spécialisé en droit fiscal et en droit des sociétés, <br> tant en conseil qu’en contentieux. <br>
+            <h1 class="title_home_section" data-aos="fade-up" data-aos-duration="1100">Avocats fiscalistes <br> à
+                Bayonne</h1>
+            <p class="description_home_section" data-aos="fade-up" data-aos-duration="1100">Le cabinet AF AVOCATS est
+                spécialisé en droit fiscal et en droit des sociétés, <br> tant en conseil qu’en contentieux. <br>
                 Le cabinet est composé d’une équipe d’avocats réactifs et disponibles.</p>
             <a href="#cabinet">En savoir plus</a>
         </div>
 
-    </section>
+    </div>
 
-
-    <section class="cabinet" id="cabinet">
+    <div class="cabinet" id="cabinet">
 
         <div class="cabinet_text_section">
             <h1>Avocats fiscalistes à Bayonne</h1>
             <h3>Droit fiscal : entreprises et particuliers</h3>
             <p>
-                Depuis sa création, le cabinet AF AVOCATS <b>s’est spécialisé dans le droit fiscal</b>. La technicité de cette matière échappe bien souvent à la compréhension de ses propres acteurs que sont les contribuables.
-                L’idée du cabinet est de <b>travailler au service du client mais également en collaboration avec ce dernier</b>. Dans ce cadre, le cabinet est attaché à vulgariser les notions techniques afin d’assurer au client une <b>bonne compréhension des enjeux du dossier</b>.
+                Depuis sa création, le cabinet AF AVOCATS <b>s’est spécialisé dans le droit fiscal</b>. La technicité de
+                cette matière échappe bien souvent à la compréhension de ses propres acteurs que sont les contribuables.
+                L’idée du cabinet est de <b>travailler au service du client mais également en collaboration avec ce
+                    dernier</b>. Dans ce cadre, le cabinet est attaché à vulgariser les notions techniques afin
+                d’assurer au client une <b>bonne compréhension des enjeux du dossier</b>.
             </p>
 
             <h3>Fondé par Arnaud FOUCHER, ce cabinet est spécialisé en droit fiscal et en droit des sociétés</h3>
             <p>
-                Le cabinet de droit fiscal AF est un cabinet indépendant créé en 2022 par Me Arnaud Foucher, avocat au Barreau de Bayonne.
-                Après une carrière au sein de la Direction Générale des Finances Publiques dans différents services dédiés au contrôle fiscal,
-                décision a été prise de fonder ce cabinet de conseil fiscal, afin de mettre au service des citoyens ses compétences et savoir-faire.
+                Le cabinet de droit fiscal AF est un cabinet indépendant créé en 2022 par Me Arnaud Foucher, avocat au
+                Barreau de Bayonne.
+                Après une carrière au sein de la Direction Générale des Finances Publiques dans différents services
+                dédiés au contrôle fiscal,
+                décision a été prise de fonder ce cabinet de conseil fiscal, afin de mettre au service des citoyens ses
+                compétences et savoir-faire.
             </p>
         </div>
+        <div class="cabinet_image_section"></div>
+    </div>
 
-        <div class="cabinet_image_section">
-            
-        </div>
-
-    </section>
-
-    <section id="demande_devis">
+    <div id="demande_devis">
         <div class="demande_devis_section">
             <h1>Demande d'informations et devis gratuit</h1>
             <p>
@@ -78,28 +92,94 @@
             </p>
             <a href="#contact">Contactez</a>
         </div>
-    </section>
+    </div>
 
-    <section id="expertise">
+    <div id="valeurs">
 
-    </section>
+        <div class="titre_valeur_section">
+            <h1>Nos valeurs</h1>
+        </div>
 
-    <section id="honoraire">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="valeur_text_section">
+                    <h1>La communication avec les clients</h1>
+                    <p>
+                        Le cabinet est particulièrement attaché à la communication avec ses clients que ce soit pour
+                        faire un point sur l’avancée du dossier mais aussi et surtout pour donner un point de vue
+                        objectif et général sur les problématiques rencontrées. Une bonne communication permet
+                        d’anticiper les obstacles liés à l’affaire confiée par le client. Le cabinet s’engage donc à
+                        être le plus pédagogue et le plus transparent à l’égard du client.
+                    </p>
+                </div>
+                <div class="valeur_image_section">
+                    <img src="/images/Lauburu.svg.png" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="valeur_text_section">
+                    <h1>Privilégier les solutions amiables</h1>
+                    <p>
+                        En matière fiscale, il est primordial, notamment lors d’un contrôle de privilégier une solution
+                        amiable en transigeant avec l’administration fiscale. Le cabinet s’engage dans cette voie compte
+                        tenu des délais de procédures, et de l’anxiété des clients afin de clôturer le dossier le plus
+                        rapidement et rassurer le client. Aussi, en plus de son aspect rapide, cette solution est
+                        beaucoup moins coûteuse pour le client.
+                    </p>
+                </div>
+                <div class="valeur_image_section">
+                    <img src="/images/Lauburu.svg.png" alt="">
+                </div>
+            </div>
+            <div class="item">
+                <div class="valeur_text_section">
+                    <h1>Proposer des solutions adaptées</h1>
+                    <p>
+                        Chaque dossier fiscal présente des aspects différents. Ces différences dépendent de la
+                        personnalité du client, et des enjeux liés à son dossier. Le cabinet s’attache donc à traiter
+                        chaque client de la façon la plus appropriée en effectuant d’abord un diagnostic de la situation
+                        (sur les montants de redressements, sur les chances de succès…) en posant ensuite les contours
+                        de la mission qui va être confiée à l’avocat de façon presqu’exhaustive.
+                    </p>
+                </div>
+                <div class="valeur_image_section">
+                    <img src="/images/Lauburu.svg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    </section>
+    <div id="expertise">
 
-    <section id="avis">
+    </div>
 
-    </section>
+    <div id="honoraire">
 
-    <section id="contact">
+    </div>
 
-    </section>
+    <div id="avis">
+
+    </div>
+
+    <div id="contact">
+
+    </div>
 
     <footer>
 
     </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/9315477340.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
 </body>
+
 </html>

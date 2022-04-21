@@ -1,12 +1,12 @@
-:root{
-    --main-color:#EFD006;
-    --dark_grey:#191d2b;
+:root {
+    --main-color: #EFD006;
+    --dark_grey: #191d2b;
     --white: #fff;
     --black: #13131a;
-    --bg:#010103;
+    --bg: #010103;
     --marine: rgba(33, 41, 83, 0.8);
     --transparent: transparent;
-    --border:.1rem solid rgba(255,255,255,.3);
+    --border: .1rem solid rgba(255, 255, 255, .3);
 
 
     --gold: #C99E67;
@@ -17,32 +17,23 @@
     --grey: #7F7F7F;
 
 
-    --violet: rgba(255,0,255);
+    --violet: rgba(255, 0, 255);
 }
 
 html {
-    scroll-behavior: smooth;    /* Transition douce vers les différentes parties */
+    scroll-behavior: smooth;
+    /* Transition douce vers les différentes parties */
 }
 
 body {
-    margin: 0;  /* Aucune marges externes */
+    margin: 0;
+    /* Aucune marges externes */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1rem;               /* Taille de police */
+    font-size: 1rem;
+    /* Taille de police */
     background-color: var(--bg);
 }
 
-/* --------------------------------- Heading title parts --------------------------------- */
-
-.heading{
-    height: 3vw;
-    text-align: center;
-    color: var(--white);
-    text-transform: uppercase;
-    padding-bottom: .5rem;
-    font-size: 3rem;
-
-    overflow: hidden;
-}
 
 /* -------------------------------- Barre de navigation -------------------------------- */
 
@@ -56,15 +47,14 @@ body {
     z-index: 300;
     position: sticky;
     top: 0;
-
-    /* display: none; */
 }
 
 .navbar a {
     text-decoration: none;
     color: var(--white);
 
-    transition: all 0.5s; /* Ajout d'un effet de transition */
+    transition: all 0.5s;
+    /* Ajout d'un effet de transition */
 }
 
 .navbar a:hover {
@@ -72,7 +62,7 @@ body {
 }
 
 .logo {
-    margin-left: 60px;
+    margin-left: 15px;
 }
 
 .list {
@@ -82,8 +72,10 @@ body {
     margin-right: 3vw;
 }
 
-#toggler, .navbar label {
-    display: none;  /* Cacher l'élément */
+#toggler,
+.navbar label {
+    display: none;
+    /* Cacher l'élément */
     color: var(--white);
 }
 
@@ -105,9 +97,10 @@ body {
         display: inline-flex;
         align-items: center;
         cursor: pointer;
+        padding-right: 15px;
     }
 
-    #toggler:checked ~ .menu {
+    #toggler:checked~.menu {
         max-height: 100%;
     }
 }
@@ -116,7 +109,7 @@ body {
 
 #home {
     max-height: 90vh;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,7 +125,6 @@ body {
 
 .home_section {
     position: absolute;
-    top: 12vw;
 
     z-index: 200;
 
@@ -215,7 +207,6 @@ body {
     height: 50vh;
     width: 300px;
     background-color: var(--main-color);
-
 }
 
 /* -------------------------------- Demande & devis section -------------------------------- */
@@ -263,6 +254,55 @@ body {
     color: var(--white);
     background-color: var(--grey);
     transition: all 0.5s;
+}
+
+
+/* -------------------------------- Valeur section -------------------------------- */
+
+#valeurs {
+    height: fit-content;
+    background-color: var(--beige);
+    padding: 50px 0;
+}
+
+.titre_valeur_section {
+    font-size: 1rem;
+    color: var(--font-titre-partie);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-left: 13.5vw;
+}
+
+#valeurs .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vw;
+    flex-wrap: wrap;
+}
+
+.valeur_text_section {
+    height: fit-content;
+    width: 45vw;
+    background-color: var(--transparent);
+}
+
+.valeur_text_section h1 {
+    font-size: 1.5rem;
+}
+
+.valeur_text_section p {
+    font-size: 1rem;
+    padding: 0 0 20px 0;
+}
+
+.valeur_image_section {
+    height: fit-content;
+    width: 250px;
+    background: url(/images/Lauburu.svg.png);
 }
 
 /* -------------------------------- Expertise section -------------------------------- */
