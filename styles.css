@@ -263,17 +263,18 @@ body {
     height: fit-content;
     background-color: var(--beige);
     padding: 50px 0;
-}
-
-.titre_valeur_section {
-    font-size: 1rem;
-    color: var(--font-titre-partie);
 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-    padding-left: 13.5vw;
+.titre_valeur_section {
+    font-size: 1.3rem;
+    color: var(--font-titre-partie);
+
+    /* padding: 0 0 20px 0; */
 }
 
 #valeurs .item {
