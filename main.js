@@ -1,3 +1,4 @@
+// Création du caroussel pour la partie valeurs du cabinet
 $('.owl-carousel').owlCarousel({
     loop: true,
     center: true,

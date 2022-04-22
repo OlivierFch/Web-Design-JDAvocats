@@ -157,11 +157,11 @@ body {
     border-radius: 30px;
     background-color: var(--gold);
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .home_section a:hover {
     background-color: var(--dark-gold);
-    transition: all 0.5s;
 }
 
 
@@ -244,17 +244,18 @@ body {
 }
 
 .demande_devis_section a {
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
-    background-color: var(--white);
+    background-color: var(--gold);
+    cursor: pointer;
     padding: 15px 30px;
     border-radius: 30px;
+    transition: all 0.5s;
 }
 
 .demande_devis_section a:hover {
     color: var(--white);
-    background-color: var(--grey);
-    transition: all 0.5s;
+    background-color: var(--dark-gold);
 }
 
 
@@ -263,7 +264,7 @@ body {
 #valeurs {
     height: fit-content;
     background-color: var(--beige);
-    padding: 50px 0;
+    padding: 25px 0;
 
     display: flex;
     align-items: center;
@@ -274,8 +275,6 @@ body {
 .titre_valeur_section {
     font-size: 1.3rem;
     color: var(--font-titre-partie);
-
-    /* padding: 0 0 20px 0; */
 }
 
 #valeurs .item {
@@ -310,9 +309,19 @@ body {
 /* -------------------------------- Expertise section -------------------------------- */
 
 #expertise {
-    height: 52vw;
-    width: auto;
-    background-color: red;
+    height: fit-content;
+    background-color: var(--marine);
+    padding: 25px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.titre_expertise_section {
+    font-size: 1.3rem;
+    color: var(--font-titre-partie);
 }
 
 /* -------------------------------- Honoraire section -------------------------------- */
