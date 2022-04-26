@@ -11,29 +11,25 @@
 
     --gold: #C99E67;
     --dark-gold: #B58240;
+    --blue: #344183;
 
     --font-titre-partie: #A9814E;
     --beige: #FBF5EE;
     --grey: #7F7F7F;
 
-
-    --violet: rgba(255, 0, 255);
-    --orange: #FF6600;
-    --mauve: #7C77B9;
 }
 
 html {
-    scroll-behavior: smooth;
-    /* Transition douce vers les différentes parties */
+    scroll-behavior: smooth;    /* Transition douce vers les différentes parties */
 }
 
 body {
-    margin: 0;
-    /* Aucune marges externes */
+    margin: 0;  /* Aucune marges externes */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1rem;
-    /* Taille de police */
+    font-size: 1rem;    /* Taille de police */
     background-color: var(--bg);
+
+    text-align: justify;
 }
 
 
@@ -75,35 +71,8 @@ body {
 
 #toggler,
 .navbar label {
-    display: none;
-    /* Cacher l'élément */
+    display: none;  /* Cacher l'élément */
     color: var(--white);
-}
-
-
-@media screen and (max-width: 600px) {
-    .menu {
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-    }
-
-    .list {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .navbar label {
-        display: inline-flex;
-        align-items: center;
-        cursor: pointer;
-        padding-right: 15px;
-    }
-
-    #toggler:checked~.menu {
-        max-height: 100%;
-    }
 }
 
 /* -------------------------------- Home section -------------------------------- */
@@ -185,7 +154,7 @@ body {
 
 .cabinet_text_section {
     height: fit-content;
-    width: 50vw;
+    width: 45vw;
     background-color: var(--transparent);
 }
 
@@ -238,11 +207,12 @@ body {
 
 .demande_devis_section h1 {
     font-size: 2rem;
+    padding: 0 20px 0 0;
 }
 
 .demande_devis_section p {
     font-size: 1rem;
-    padding: 0 0 40px 0;
+    padding: 0 50px 40px 0;
 }
 
 .demande_devis_section a {
@@ -265,7 +235,7 @@ body {
 
 #valeurs {
     height: fit-content;
-    background-color: var(--white);
+    background-color: var(--beige);
     padding: 25px 0;
 
     display: flex;
@@ -312,7 +282,7 @@ body {
 
 #expertise {
     height: fit-content;
-    background-color: var(--beige);
+    background-color: var(--white);
     padding: 25px 0;
 }
 
@@ -354,7 +324,7 @@ body {
 }
 
 #expertise .box:hover {
-    background-color: var(--gold);
+    background-color: var(--blue);
     color: var(--white);
     transform: scale(1.05);
     
@@ -388,6 +358,7 @@ body {
 
 #rappel_contact_tel .rappel_contact_section h1 {
     font-size: 2rem;
+    padding: 0 60px 0 0;
 }
 
 #rappel_contact_tel .rappel_contact_section a {
@@ -422,4 +393,46 @@ body {
     height: 48vw;
     width: auto;
     background-color: orange;
+}
+
+
+
+/* -------------------------------- Mobile device -------------------------------- */
+
+@media screen and (max-width: 600px) {
+        
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        padding-right: 15px;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }
+
+    #home .home_section {
+        margin-bottom: 70px;
+    }
+
+    #demande_devis .demande_devis_section {
+        width: max-content;
+    }
+
+    #rappel_contact_tel .rappel_contact_section {
+        width: max-content;
+    }
 }
