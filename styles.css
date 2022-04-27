@@ -11,6 +11,7 @@
 
     --gold: #C99E67;
     --dark-gold: #B58240;
+    --dark_yellow: #CF9500;
     --blue: #344183;
 
     --font-titre-partie: #A9814E;
@@ -55,7 +56,7 @@ body {
 }
 
 .navbar a:hover {
-    color: var(--gold);
+    color: var(--dark_yellow);
 }
 
 .logo {
@@ -390,11 +391,72 @@ body {
 /* -------------------------------- Contact section -------------------------------- */
 
 #contact {
-    height: 48vw;
+    /* height: 46vw;
     width: auto;
     background-color: orange;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+
+    height: fit-content;
+    background-color: var(--orange);
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 
+.bloc_information {
+    height: 46vw;
+    width: 45%;
+    background-color: var(--dark_grey);
+    color: var(--white);
+    font-size: 1.3rem;
+}
+
+.bloc_information .premiere_div {
+    padding: 50px 0 0 80px;
+}
+
+.bloc_information .deuxieme_div {
+    padding: 0 0 0 80px;
+}
+
+.bloc_information .troisieme_div {
+    padding: 0 0 0 80px;
+}
+
+.bloc_information .premiere_div .num_tel {
+    color: var(--dark_yellow);
+}
+
+.bloc_information h1 {
+    font-size: 2rem;
+}
+
+.bloc_information p {
+    font-size: 1rem;
+    font-weight: 100; /* Essayer de rendre la police plus fine */
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    height: 1px;
+    width: 33vw;
+    background-color: rgba(204, 204, 204, 0.5);
+    border-radius: 5px;
+    margin: 40px 80px;
+  }
+
+.bloc_formulaire {
+    height: 46vw;
+    width: 55%;
+    background-color: var(--white);
+}
 
 
 /* -------------------------------- Mobile device -------------------------------- */
