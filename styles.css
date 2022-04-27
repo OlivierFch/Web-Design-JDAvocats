@@ -14,6 +14,7 @@
     --yellow: #FFBA0A;
     --dark_yellow: #CF9500;
     --blue: #344183;
+    --marine-clair: #262D45;
 
     --font-titre-partie: #A9814E;
     --fond-input: #F7F6F2;
@@ -380,8 +381,6 @@ body {
 }
 
 #rappel_contact_tel .rappel_contact_section a img {
-    position: relative;
-    right: 10px;
     padding-right: 10px;
 }
 
@@ -393,7 +392,7 @@ body {
 /* -------------------------------- Contact section -------------------------------- */
 
 #contact {
-    height: fit-content;
+    height: 42vw;
     background-color: var(--orange);
 
     display: flex;
@@ -405,7 +404,8 @@ body {
 .bloc_information {
     height: 42vw;
     width: 45%;
-    background-color: var(--dark_grey);
+    /* background-color: var(--marine); */
+    background-color: var(--marine-clair);
     color: var(--white);
     font-size: 1.3rem;
 }
@@ -518,6 +518,27 @@ body {
 }
 
 
+/* -------------------------------- Footer section -------------------------------- */
+
+#pied {
+    height: fit-content;
+    width: auto;
+    background-color: var(--dark_grey);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#pied .droits {
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    padding: 4px 40px;
+}
+
+
 /* -------------------------------- Mobile device -------------------------------- */
 
 @media screen and (max-width: 600px) {
@@ -556,4 +577,6 @@ body {
     #rappel_contact_tel .rappel_contact_section {
         width: max-content;
     }
+
+
 }
