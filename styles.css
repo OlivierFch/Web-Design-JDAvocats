@@ -423,7 +423,7 @@ body {
 }
 
 .bloc_information .premiere_div .num_tel {
-    color: var(--dark_yellow);
+    color: var(--yellow);
 }
 
 .bloc_information h1 {
