@@ -6,21 +6,16 @@
     --bg: #010103;
     --marine: rgba(33, 41, 83, 0.6);
     --transparent: transparent;
-    --border: .1rem solid rgba(255, 255, 255, .3);
-
-
     --gold: #C99E67;
     --dark-gold: #B58240;
     --yellow: #FFBA0A;
     --dark_yellow: #CF9500;
     --blue: #344183;
     --marine-clair: #262D45;
-
     --font-titre-partie: #A9814E;
     --fond-input: #F7F6F2;
     --beige: #FBF5EE;
     --grey: #7F7F7F;
-
 }
 
 html {
@@ -49,14 +44,12 @@ body {
     z-index: 400;
     position: sticky;
     top: 0;
-
     box-shadow: 5px 0 10px var(--black);
 }
 
 .navbar a {
     text-decoration: none;
     color: var(--white);
-
     transition: all 0.5s ease;   /* Ajout d'un effet de transition */
 }
 
@@ -85,11 +78,9 @@ body {
 
 #home {
     max-height: 90vh;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     overflow: hidden;
 }
 
@@ -101,15 +92,11 @@ body {
 
 .home_section {
     position: absolute;
-
     z-index: 200;
-
     max-width: 65rem;
     width: 50vw;
-
     color: var(--white);
     background-color: var(--transparent);
-
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -147,15 +134,12 @@ body {
 #cabinet {
     height: fit-content;
     background-color: var(--beige);
-
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5vw;
     flex-wrap: wrap;
-
     padding: 50px 0;
-
 }
 
 .cabinet_text_section {
@@ -194,11 +178,9 @@ body {
 #demande_devis {
     height: fit-content;
     width: auto;
-
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
     background: url(images/judge-gavel-and-law-books.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -246,7 +228,6 @@ body {
     height: fit-content;
     background-color: var(--beige);
     padding: 25px 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,11 +324,9 @@ body {
 #rappel_contact_tel {
     height: fit-content;
     width: auto;
-
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
     background: url(images/presentation_bayonne.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -377,10 +356,8 @@ body {
     padding: 15px 30px;
     border-radius: 30px;
     transition: all 0.5s;
-
     display: flex;
     align-items: center;
-
 }
 
 #rappel_contact_tel .rappel_contact_section a img {
@@ -395,14 +372,11 @@ body {
 /* -------------------------------- Contact section -------------------------------- */
 
 #contact {
-    /* height: 42vw; */
     height: fit-content;
     background-color: var(--orange);
-
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
 }
 
 .bloc_information {
@@ -506,7 +480,6 @@ body {
     height: 200px;
 }
 
-
 .cinquieme_bloc a {
     height: fit-content;
     width: fit-content;
@@ -529,7 +502,6 @@ body {
     height: fit-content;
     width: auto;
     background-color: var(--dark_grey);
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -573,61 +545,73 @@ body {
 
     #home .home_section {
         margin-bottom: 70px;
-        width: 350px;
+        width: 84vw;
     }
 
     .cabinet_text_section {
         height: fit-content;
-        width: 380px;
+        width: 84vw;
         background-color: var(--transparent);
+        padding: 0 8vw;
     }
 
     .cabinet_image_section {
         height: fit-content;
-        width: 380px;
+        width: 84vw;
     }
 
     #demande_devis .demande_devis_section {
         width: max-content;
+        text-align: justify;
+        padding: 50px 8vw 80px 8vw;
+    }
+
+    .demande_devis_section h1 {
+        font-size: 2rem;
+        padding: 0 8vw;
+    }
+    
+    .demande_devis_section p {
+        font-size: 1rem;
+        padding: 0 8vw 40px 8vw;
+    }
+
+    .demande_devis_section a {
+        padding: 15px 30px;
+        margin: 0 8vw;
     }
 
     #rappel_contact_tel .rappel_contact_section {
         width: max-content;
+        text-align: initial;
+        padding: 50px 14vw 80px 16vw;
     }
 
     .valeur_text_section {
         height: fit-content;
-        width: 380px;
+        width: 84vw;
     }
 
+    #expertise .box-container .box {
+        width: 83.5vw;
+    }
+    
+    #expertise .box img {
+        height: 6rem;
+    }
 
     .bloc_information {
         height: fit-content;
-        width: 550px;
+        width: 83.5vw;
+        padding-right: 20vw;
         padding-bottom: 50px;
     }
 
     .bloc_formulaire {
         height: fit-content;
-        width: 550px;
+        width: 100vw;
         padding-bottom: 20px;
     }
-
-    /* #nom_input {
-        width: 100px;
-    }
-
-    #email_input {
-        width: 255px;
-    }
-
-    #sujet_input {
-        width: 382px;
-    }
-
-    #message_input {
-        width: 382px;
-    } */
 
     #nom_input {
         width: 27.5vw;
@@ -647,6 +631,6 @@ body {
 
     .droits {
         height: fit-content;
-        width: 380px;
+        width: 375px;
     }
 }
