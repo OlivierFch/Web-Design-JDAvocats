@@ -179,11 +179,14 @@ body {
     padding: 0 0 20px 0;
 }
 
-
 .cabinet_image_section {
-    height: 50vh;
-    width: 300px;
-    background-color: var(--main-color);
+    height: fit-content;
+    width: 380px;
+}
+
+.image_photo_cabinet {
+    height: auto;
+    max-width: 100%;
 }
 
 /* -------------------------------- Demande & devis section -------------------------------- */
