@@ -624,7 +624,7 @@ body {
     }
 
     #home {
-        max-height: 90vh;
+        max-height: 180vw;
     }
 
     #home .home_section {
