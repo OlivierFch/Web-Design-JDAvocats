@@ -196,7 +196,7 @@ body {
     align-items: center;
     justify-content: flex-start;
 
-    background: url(/images/justice_droit.jpg);
+    background: url(images/judge-gavel-and-law-books.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -280,7 +280,7 @@ body {
 
 .valeur_image_section {
     height: fit-content;
-    width: 250px;
+    width: 400px;
     background: url(/images/Lauburu.svg.png);
 }
 
