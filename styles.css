@@ -671,6 +671,10 @@ body {
         padding: 50px 14vw 80px 16vw;
     }
 
+    .rappel_contact_section a {
+        padding: 15px 8vw;
+    }
+
     .valeur_text_section {
         height: fit-content;
         width: 84vw;
