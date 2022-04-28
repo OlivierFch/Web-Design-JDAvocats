@@ -623,6 +623,10 @@ body {
         max-height: 100%;
     }
 
+    #home {
+        max-height: 90vh;
+    }
+
     #home .home_section {
         margin-bottom: 70px;
         width: 84vw;
