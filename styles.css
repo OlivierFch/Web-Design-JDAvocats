@@ -672,7 +672,7 @@ body {
     }
 
     .rappel_contact_section a {
-        padding: 15px 8vw;
+        font-size: 0.8rem;
     }
 
     .valeur_text_section {
@@ -693,6 +693,10 @@ body {
         width: 83.5vw;
         padding-right: 20vw;
         padding-bottom: 50px;
+    }
+
+    .bloc_information h1 {
+        font-size: 1.6rem;
     }
 
     .bloc_formulaire {
