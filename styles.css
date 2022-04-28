@@ -19,13 +19,16 @@
 }
 
 html {
-    scroll-behavior: smooth;    /* Transition douce vers les différentes parties */
+    scroll-behavior: smooth;
+    /* Transition douce vers les différentes parties */
 }
 
 body {
-    margin: 0;  /* Aucune marges externes */
+    margin: 0;
+    /* Aucune marges externes */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1rem;    /* Taille de police */
+    font-size: 1rem;
+    /* Taille de police */
     background-color: var(--bg);
 
     text-align: justify;
@@ -41,16 +44,14 @@ body {
     justify-content: space-between;
     background-color: var(--dark_grey);
     padding: 12px;
-    z-index: 400;
-    position: sticky;
-    top: 0;
     box-shadow: 5px 0 10px var(--black);
 }
 
 .navbar a {
     text-decoration: none;
     color: var(--white);
-    transition: all 0.5s ease;   /* Ajout d'un effet de transition */
+    transition: all 0.5s ease;
+    /* Ajout d'un effet de transition */
 }
 
 .navbar a:hover {
@@ -70,7 +71,8 @@ body {
 
 #toggler,
 .navbar label {
-    display: none;  /* Cacher l'élément */
+    display: none;
+    /* Cacher l'élément */
     color: var(--white);
 }
 
@@ -298,7 +300,7 @@ body {
     text-align: center;
     border-radius: 20px;
     transition: all 0.4s;
-    
+
 }
 
 #expertise .box img {
@@ -419,7 +421,7 @@ body {
     background-color: rgba(204, 204, 204, 0.5);
     border-radius: 5px;
     margin: 40px 80px;
-  }
+}
 
 .bloc_formulaire {
     height: 42vw;
@@ -473,7 +475,7 @@ body {
 #sujet_input,
 #message_input {
     width: 43.5vw;
-} 
+}
 
 #message_input {
     resize: none;
@@ -519,7 +521,7 @@ body {
 /* -------------------------------- Mobile device -------------------------------- */
 
 @media screen and (max-width: 600px) {
-        
+
     .menu {
         width: 100%;
         max-height: 0;
@@ -530,6 +532,12 @@ body {
         flex-direction: column;
         align-items: center;
         padding: 20px;
+    }
+
+    .navbar {
+        z-index: 400;
+        position: sticky;
+        top: 0;
     }
 
     .navbar label {
@@ -570,7 +578,7 @@ body {
         font-size: 2rem;
         padding: 0 8vw;
     }
-    
+
     .demande_devis_section p {
         font-size: 1rem;
         padding: 0 8vw 40px 8vw;
@@ -595,7 +603,7 @@ body {
     #expertise .box-container .box {
         width: 83.5vw;
     }
-    
+
     #expertise .box img {
         height: 6rem;
     }
