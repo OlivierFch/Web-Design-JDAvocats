@@ -181,7 +181,7 @@ body {
 
 .cabinet_image_section {
     height: fit-content;
-    width: 380px;
+    width: 30vw;
 }
 
 .image_photo_cabinet {
@@ -407,7 +407,6 @@ body {
 .bloc_information {
     height: 42vw;
     width: 45%;
-    /* background-color: var(--marine); */
     background-color: var(--marine-clair);
     color: var(--white);
     font-size: 1.3rem;
@@ -571,6 +570,18 @@ body {
 
     #home .home_section {
         margin-bottom: 70px;
+        width: 350px;
+    }
+
+    .cabinet_text_section {
+        height: fit-content;
+        width: 380px;
+        background-color: var(--transparent);
+    }
+
+    .cabinet_image_section {
+        height: fit-content;
+        width: 380px;
     }
 
     #demande_devis .demande_devis_section {
@@ -581,5 +592,9 @@ body {
         width: max-content;
     }
 
-
+    .valeur_text_section {
+        height: fit-content;
+        width: 380px;
+        background-color: var(--transparent);
+    }
 }
