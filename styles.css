@@ -45,7 +45,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: var(--dark_grey);
-    padding: 8px;
+    padding: 12px;
     z-index: 400;
     position: sticky;
     top: 0;
@@ -395,7 +395,8 @@ body {
 /* -------------------------------- Contact section -------------------------------- */
 
 #contact {
-    height: 42vw;
+    /* height: 42vw; */
+    height: fit-content;
     background-color: var(--orange);
 
     display: flex;
@@ -498,11 +499,13 @@ body {
 #sujet_input,
 #message_input {
     width: 43.5vw;
-}
+} 
 
 #message_input {
+    resize: none;
     height: 200px;
 }
+
 
 .cinquieme_bloc a {
     height: fit-content;
@@ -537,7 +540,7 @@ body {
     width: 100%;
     text-align: center;
     color: var(--white);
-    padding: 4px 40px;
+    padding: 2px 40px;
 }
 
 
@@ -595,6 +598,55 @@ body {
     .valeur_text_section {
         height: fit-content;
         width: 380px;
-        background-color: var(--transparent);
+    }
+
+
+    .bloc_information {
+        height: fit-content;
+        width: 550px;
+        padding-bottom: 50px;
+    }
+
+    .bloc_formulaire {
+        height: fit-content;
+        width: 550px;
+        padding-bottom: 20px;
+    }
+
+    /* #nom_input {
+        width: 100px;
+    }
+
+    #email_input {
+        width: 255px;
+    }
+
+    #sujet_input {
+        width: 382px;
+    }
+
+    #message_input {
+        width: 382px;
+    } */
+
+    #nom_input {
+        width: 27.5vw;
+    }
+
+    #email_input {
+        width: 50vw;
+    }
+
+    #sujet_input {
+        width: 83vw;
+    }
+
+    #message_input {
+        width: 83vw;
+    }
+
+    .droits {
+        height: fit-content;
+        width: 380px;
     }
 }
