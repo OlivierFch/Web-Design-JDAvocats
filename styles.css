@@ -455,6 +455,7 @@ body {
 #message_input {
     background-color: var(--fond-input);
     border: 2px solid var(--black);
+    border-radius: 5px;
     padding: 5px 6px;
 }
 
@@ -479,10 +480,11 @@ body {
 .cinquieme_bloc a {
     height: fit-content;
     width: fit-content;
-    padding: 8px 20px;
+    padding: 8px 30px;
     text-decoration: none;
     color: var(--white);
     background-color: var(--dark_yellow);
+    border-radius: 20px;
 
     transition: all 0.5s ease;
 }
