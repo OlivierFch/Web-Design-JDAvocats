@@ -1,5 +1,6 @@
 :root {
-    --main-color: #EFD006;
+
+    /* Centralisation des couleurs du site */
     --dark_grey: #191d2b;
     --white: #fff;
     --black: #13131a;
@@ -77,7 +78,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: hidden;   /* Cacher les éléments qui dépassent */
 }
 
 #bgVideo {
@@ -261,7 +262,6 @@ body {
 .valeur_image_section {
     height: fit-content;
     width: 400px;
-    background: url(/images/Lauburu.svg.png);
 }
 
 /* -------------------------------- Expertise section -------------------------------- */
@@ -282,7 +282,7 @@ body {
 
 #expertise .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));   /* Définir un tableau de minimum 25rem et max 1fr */
     padding: 0 2rem;
     text-align: center;
     gap: 1rem;
@@ -311,7 +311,7 @@ body {
 
 #expertise .box:hover {
     background-color: var(--yellow);
-    transform: translateY(-10px);
+    transform: translateY(-10px);   /* effet d'élévation */
 }
 
 
